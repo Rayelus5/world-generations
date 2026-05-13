@@ -1,5 +1,5 @@
 export const GITHUB_RELEASE_URL =
-  'https://github.com/placeholder/the-world-generations/releases/latest/download/THE.WORLD.Setup.exe';
+  'https://github.com/Rayelus5/world-generations/releases/latest/download/THE.WORLD.Setup.1.0.exe';
 
 export const MOD_FEATURES = [
   {
