@@ -34,6 +34,6 @@ export const MANUAL_STEPS = [
 export const SERVER_INFO = [
   { label: 'Versión', value: 'Fabric 1.20.1' },
   { label: 'Tipo', value: 'Survival / SMP Privado' },
-  { label: 'IP del Servidor', value: 'IP próximamente' },
+  { label: 'IP del Servidor', value: 'mc.rayelus.com' },
   { label: 'Estado', value: 'ONLINE', accent: true },
 ];

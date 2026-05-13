@@ -71,7 +71,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="font-mono text-sm text-muted-ash mt-6 tracking-wider"
         >
-          Fabric 1.20.1 · Servidor privado · +50 mods
+          Fabric 1.20.1 · Servidor privado · +300 mods
         </motion.p>
 
         {/* CTA */}
@@ -109,7 +109,7 @@ export function Hero() {
         transition={{ delay: 1.2, duration: 0.6 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="font-mono text-xs tracking-widest uppercase text-muted-ash">scroll</span>
+        
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5 }}

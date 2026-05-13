@@ -26,7 +26,7 @@ export function Footer() {
         </nav>
 
         <p className="font-mono text-xs text-muted-ash tracking-wider">
-          © 2025 THE WORLD GENERATIONS
+          © 2026 THE WORLD GENERATIONS
         </p>
       </div>
     </footer>
