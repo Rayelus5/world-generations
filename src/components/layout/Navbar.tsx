@@ -6,9 +6,11 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
-    { label: 'Características', href: '#features' },
+    { label: 'Mods', href: '#features' },
     { label: 'Instalación', href: '#install' },
     { label: 'Servidor', href: '#about' },
+    { label: 'Lanzamiento', href: '#launch' },
+    { label: 'Comunidad', href: '#discord' },
   ];
 
   const scrollTo = (href: string) => {

@@ -5,6 +5,8 @@ import { Hero } from './components/sections/Hero';
 import { Features } from './components/sections/Features';
 import { HowToInstall } from './components/sections/HowToInstall';
 import { About } from './components/sections/About';
+import { Countdown } from './components/sections/Countdown';
+import { Discord } from './components/sections/Discord';
 
 export function App() {
   return (
@@ -12,9 +14,11 @@ export function App() {
       <Navbar />
       <main>
         <Hero />
+        <Countdown />
         <Features />
         <HowToInstall />
         <About />
+        <Discord />
       </main>
       <Footer />
       <Toaster
