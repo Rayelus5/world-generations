@@ -42,7 +42,7 @@ export function Countdown() {
   }, []);
 
   return (
-    <section id="launch" className="bg-midnight-ink py-28 px-6 overflow-hidden">
+    <section id="launch" className="bg-midnight-ink py-16 md:py-28 px-6 overflow-hidden">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <motion.div
@@ -100,7 +100,13 @@ export function Countdown() {
               {units.map((unit, i) => (
                 <div
                   key={unit.key}
-                  className="flex flex-col items-center justify-center py-10 px-4 border-r border-b md:border-b-0 border-white/20 last:border-r-0 [&:nth-child(2)]:border-r-0 md:[&:nth-child(2)]:border-r [&:nth-child(n+3)]:border-b-0"
+                  className={[
+                    'flex flex-col items-center justify-center py-8 md:py-10 px-4 border-white/20',
+                    i % 2 === 0 ? 'border-r' : '',
+                    i < 2 ? 'border-b' : '',
+                    i < 3 ? 'md:border-r' : '',
+                    'md:border-b-0',
+                  ].filter(Boolean).join(' ')}
                 >
                   <motion.span
                     key={timeLeft[unit.key]}

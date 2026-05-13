@@ -23,7 +23,7 @@ export function HowToInstall() {
   };
 
   return (
-    <section id="install" className="bg-midnight-ink py-28 px-6">
+    <section id="install" className="bg-midnight-ink py-16 md:py-28 px-6">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <motion.div
@@ -52,7 +52,7 @@ export function HowToInstall() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="p-10 border-b md:border-b-0 md:border-r border-white/20 flex flex-col gap-8"
+            className="p-7 md:p-10 border-b md:border-b-0 md:border-r border-white/20 flex flex-col gap-8"
           >
             <div className="flex flex-col gap-3">
               <Badge variant="mint">Recomendado</Badge>
@@ -87,7 +87,7 @@ export function HowToInstall() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="p-10 flex flex-col gap-8"
+            className="p-7 md:p-10 flex flex-col gap-8"
           >
             <div className="flex flex-col gap-3">
               <Badge variant="outline">Manual</Badge>

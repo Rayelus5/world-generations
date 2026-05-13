@@ -32,12 +32,12 @@ export function Navbar() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-2">
+        <ul className="hidden md:flex items-center gap-1">
           {links.map((l) => (
             <li key={l.href}>
               <button
                 onClick={() => scrollTo(l.href)}
-                className="font-ui text-sm tracking-widest uppercase px-4 py-2 border border-canvas-white text-canvas-white hover:bg-canvas-white hover:text-midnight-ink transition-all duration-200 cursor-pointer"
+                className="font-ui text-xs tracking-wider uppercase px-3 py-2 border border-canvas-white text-canvas-white hover:bg-canvas-white hover:text-midnight-ink transition-all duration-200 cursor-pointer"
               >
                 {l.label}
               </button>

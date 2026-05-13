@@ -12,7 +12,7 @@ const cardVariants = {
 
 export function About() {
   return (
-    <section id="about" className="bg-canvas-white py-28 px-6">
+    <section id="about" className="bg-canvas-white py-16 md:py-28 px-6">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <motion.div
@@ -43,7 +43,7 @@ export function About() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={cardVariants}
-              className="p-8 border-b border-r border-midnight-ink last:border-b-0 [&:nth-child(2n)]:border-r-0 sm:[&:nth-child(2n)]:border-r-0 sm:[&:nth-last-child(-n+2)]:border-b-0 flex flex-col gap-2"
+              className="p-8 flex flex-col gap-2 border-b border-midnight-ink last:border-b-0 sm:border-r sm:[&:nth-child(2n)]:border-r-0 sm:[&:nth-child(n+3)]:border-b-0"
             >
               <span className="font-mono text-xs tracking-widest uppercase text-muted-ash">
                 {info.label}
@@ -67,7 +67,7 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="border border-midnight-ink p-10"
+          className="border border-midnight-ink p-8 md:p-10"
         >
           <p className="font-mono text-sm text-graphite leading-relaxed tracking-wide max-w-2xl">
             THE WORLD GENERATIONS es un servidor de Minecraft privado pensado para jugar con amigos.

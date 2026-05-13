@@ -19,7 +19,7 @@ function DiscordIcon({ size = 32 }: { size?: number }) {
 
 export function Discord() {
   return (
-    <section id="discord" className="bg-canvas-white py-28 px-6">
+    <section id="discord" className="bg-canvas-white py-16 md:py-28 px-6">
       <div className="mx-auto max-w-[1200px]">
         <div className="border border-midnight-ink">
           <div className="grid grid-cols-1 md:grid-cols-2">
@@ -29,7 +29,7 @@ export function Discord() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="p-12 md:p-16 flex flex-col justify-center gap-6 border-b md:border-b-0 md:border-r border-midnight-ink"
+              className="p-8 md:p-16 flex flex-col justify-center gap-6 border-b md:border-b-0 md:border-r border-midnight-ink"
             >
               <span className="font-mono text-xs tracking-[0.3em] uppercase text-muted-ash">
                 Comunidad
@@ -66,7 +66,7 @@ export function Discord() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="p-12 md:p-16 flex flex-col justify-center"
+              className="p-8 md:p-16 flex flex-col justify-center"
             >
               <ul className="flex flex-col divide-y divide-midnight-ink/20">
                 {[

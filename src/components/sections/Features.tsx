@@ -12,7 +12,7 @@ const cardVariants = {
 
 export function Features() {
   return (
-    <section id="features" className="bg-canvas-white py-28 px-6">
+    <section id="features" className="bg-canvas-white py-16 md:py-28 px-6">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <motion.div
@@ -43,7 +43,7 @@ export function Features() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={cardVariants}
-              className="border-midnight-ink border-r last:border-r-0 p-8 flex flex-col gap-4 md:border-r"
+              className="p-8 flex flex-col gap-4 border-b border-midnight-ink last:border-b-0 md:border-b-0 md:border-r md:[&:last-child]:border-r-0"
             >
               <h3
                 className="font-display font-[700] uppercase text-midnight-ink tracking-tight"
