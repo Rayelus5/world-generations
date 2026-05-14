@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/Button';
 
@@ -23,13 +24,12 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-midnight-ink border-b border-white/10">
       <nav className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6">
         {/* Logo */}
-        <a
-          href="#hero"
-          onClick={(e) => { e.preventDefault(); scrollTo('#hero'); }}
+        <Link
+          to="/"
           className="font-ui font-semibold text-xl tracking-widest text-electric-mint uppercase"
         >
           TWG
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-1">
@@ -47,9 +47,11 @@ export function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Button variant="mint" size="sm" onClick={() => scrollTo('#hero')}>
-            Descargar
-          </Button>
+          <Link to="/whitelist">
+            <Button variant="mint" size="sm">
+              Whitelist
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile menu toggle */}
@@ -75,9 +77,11 @@ export function Navbar() {
             </button>
           ))}
           <div className="pt-2">
-            <Button variant="mint" size="sm" onClick={() => scrollTo('#hero')}>
-              Descargar
-            </Button>
+            <Link to="/whitelist">
+              <Button variant="mint" size="sm">
+                Whitelist
+              </Button>
+            </Link>
           </div>
         </div>
       )}
