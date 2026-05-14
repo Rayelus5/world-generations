@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function Footer() {
   const links = [
     { label: 'Características', href: '#features' },
@@ -13,7 +15,7 @@ export function Footer() {
           TWG
         </div>
 
-        <nav className="flex gap-6">
+        <nav className="flex flex-wrap justify-center gap-6">
           {links.map((l) => (
             <a
               key={l.href}
@@ -23,6 +25,12 @@ export function Footer() {
               {l.label}
             </a>
           ))}
+          <Link
+            to="/terms"
+            className="font-mono text-xs tracking-widest uppercase text-muted-ash hover:text-canvas-white transition-colors"
+          >
+            Términos
+          </Link>
         </nav>
 
         <p className="font-mono text-xs text-muted-ash tracking-wider">

@@ -10,6 +10,7 @@ import { Countdown } from './components/sections/Countdown';
 import { Discord } from './components/sections/Discord';
 import { WhitelistPage } from './pages/Whitelist';
 import { DonePage } from './pages/Done';
+import { TermsPage } from './pages/Terms';
 
 function HomePage() {
   return (
@@ -35,6 +36,7 @@ export function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/whitelist" element={<WhitelistPage />} />
         <Route path="/done" element={<DonePage />} />
+        <Route path="/terms" element={<TermsPage />} />
       </Routes>
       <Toaster
         theme="dark"
