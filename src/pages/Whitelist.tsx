@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Clock, Users, AlertTriangle } from 'lucide-react';
 
 const TOTAL_SPOTS = 30;
-const SPOTS_START = new Date('2026-05-07T00:00:00+02:00');
+const SPOTS_START = new Date('2026-04-28T00:00:00+02:00');
 const LAUNCH_DATE = new Date('2026-06-06T17:00:00+02:00');
 const FORMSPARK_URL = 'https://submit-form.com/wiCIgcpvi';
 const DISCORD_URL = 'https://discord.gg/C39kKYFByC';
