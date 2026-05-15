@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 // June 6, 2026 at 17:00 CEST (UTC+2, Spain summer time)
-const LAUNCH_DATE = new Date('2026-06-06T17:00:00+02:00');
+const LAUNCH_DATE = new Date('2026-06-12T17:00:00+02:00');
 
 interface TimeLeft {
   days: number;
@@ -62,7 +62,7 @@ export function Countdown() {
             El servidor abre en
           </h2>
           <p className="font-mono text-sm text-electric-mint mt-3 tracking-widest">
-            6 JUN 2026 — 17:00h (hora española)
+            VIERNES 12 JUN 2026 — 17:00h (hora española)
           </p>
         </motion.div>
 
